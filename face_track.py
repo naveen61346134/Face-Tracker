@@ -26,7 +26,7 @@ def video(cascade, scale=.75):
 
         grayFrame = cv.cvtColor(nFrame, cv.COLOR_BGR2GRAY)
         face_coordinates = cascade.detectMultiScale(grayFrame, 1.3, 4)
-        # print(f"FACE COORDINATES: {face_coordinates}")
+        print(f"FACE COORDINATES: {face_coordinates}")
 
         for x, y, w, h in face_coordinates:
             cv.putText(smoothFrame, "FACE", (x, y-5),
