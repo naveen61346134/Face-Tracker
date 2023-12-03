@@ -1,7 +1,6 @@
 import cv2 as cv
 
-face_cascade = cv.CascadeClassifier(
-    "Trackers/haarcascade_frontalface_default.xml")
+face_cascade = cv.CascadeClassifier("/haarcascade_frontalface_default.xml")
 
 
 def changeRes(width, height, capture):
